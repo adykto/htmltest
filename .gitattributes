@@ -1,0 +1,7 @@
+*	text=auto
+
+# Truly binary files ***should not be modified***
+*.eot binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
