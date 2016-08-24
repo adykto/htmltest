@@ -1,0 +1,29 @@
+{
+  "name": "pixel2html-test",
+  "description": "This is just me playing to be a front end dev.",
+  "main": "index.js",
+  "authors": [
+    "Alonso Méndez"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "px2html",
+    "pixel to html",
+    "pixel2html"
+  ],
+  "homepage": "https://github.com/adykto/px2html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "slick.js#^1.6.0",
+    "roboto-fontface": "^0.5.0"
+  },
+  "devDependencies": {
+    "modernizr": "^3.3.1"
+  }
+}
