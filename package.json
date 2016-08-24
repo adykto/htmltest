@@ -4,7 +4,8 @@
   "description": "This is just me playing to be a front end dev.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "clean": "rimraf dist/*",
+    "serve": "gulp serve"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/adykto/px2html#readme",
   "devDependencies": {
     "bootstrap-styl": "^5.0.7",
+    "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-bump": "^2.4.0",
     "gulp-concat": "^2.6.0",

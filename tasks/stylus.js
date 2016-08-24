@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp'),
     bootstrap = require('bootstrap-styl'),
     concat = require('gulp-concat'),
