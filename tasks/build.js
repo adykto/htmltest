@@ -2,4 +2,4 @@
 
 var gulp = require('gulp');
 
-gulp.task('default', ['vendors', 'pug:prod', 'stylus:prod', 'scripts:prod', 'assets']);
+gulp.task('build', ['vendors', 'pug:prod', 'stylus:prod', 'scripts:prod', 'assets']);

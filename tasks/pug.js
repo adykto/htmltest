@@ -18,6 +18,11 @@ gulp.task('pug', function() {
 
 gulp.task('pug:prod', function() {
     gulp.src('src/modules/*.pug')
-        .pipe(pug({pretty: true}))
+        .pipe(pug({
+          pretty: false,
+          locals: {
+            package: JSON.parse( fs.readFileSync('./package.json', { encoding: 'utf8' }) )
+          }
+        }))
         .pipe(gulp.dest('./dist/'));
 });
