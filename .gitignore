@@ -1,0 +1,11 @@
+bower_components/
+coverage/
+dist/
+logs/
+node_modules/
+.tmp
+.idea
+.DS_Store
+
+*.log
+.env
