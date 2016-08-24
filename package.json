@@ -1,0 +1,26 @@
+{
+  "name": "pixel2html-test",
+  "version": "0.0.1",
+  "description": "This is just me playing to be a front end dev.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adykto/px2html.git"
+  },
+  "keywords": [
+    "px2html",
+    "pixel",
+    "to",
+    "html",
+    "pixel2html"
+  ],
+  "author": "Alonso Méndez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adykto/px2html/issues"
+  },
+  "homepage": "https://github.com/adykto/px2html#readme"
+}
