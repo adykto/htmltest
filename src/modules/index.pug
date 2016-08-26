@@ -1,3 +1,152 @@
-include ../_core/body
+include ../_core/mixins.pug
 +body
-    h1= package.name + ' v' + package.version
+    header#menu.container
+        nav.navbar.row
+            .navbar-header.col-md-2
+                img.logo(src="/images/common/module-02-logo.svg" alt="Module 02 logo - We design and develop software.")
+            ul.nav.navbar-nav.col-md-10.hidden-print
+                li
+                    a(href="#hero") Features
+                li
+                    a(href="#pricing") Pricing
+                li
+                    a(href="#tour") Learn more
+                li
+                    a(href="#contact") Contact sales
+
+    section#hero.container
+        header.row
+            .col-md-12
+                h1 The Best Way to Work Together
+                h2 We design and develop software for funded startups and established companies. Here are just some examples of our work
+
+        .hero.row
+            .col-md-12
+                img.img-responsive.hidden-print(src="/images/showcase/hero@2x.jpg" alt="Module 02 Showcase")
+
+        .features.row
+            .col-md-4.features-bullet.features-bullet-data
+                h3 Keep your Data
+                p Enterprise-ready performance and controls.
+            .col-md-4.features-bullet.features-bullet-prototype
+                h3 Prototype your Project
+                p 24/7 proactive threat scanning to prevent attacks.
+            .col-md-4.features-bullet.features-bullet-texts
+                h3 Create Smart Texts
+                p That really resonates with your target audience.
+
+    section#pricing.container
+        header.row
+            .col-md-12
+                h1 Simple Pricing
+                h2 It seems from the moment you begin to take your love of astronomy seriously, the thing that is on your mind is what kind.
+
+        .plans.row
+            .col-md-4.plan
+                h3 BASIC
+                p For a taste our product
+                hr
+                h4 $0
+                h5 always free
+                p How to boost the design and developing process with help of four paws.
+                hr
+                ul.check-marks
+                    li.checked 2 Gb of space
+                    li.checked 30 days of file recovery
+                    li.checked MS Office 365 integration
+                    li.text-muted Unlimited third-party integrations
+                    li.text-muted Remote wipe
+                p.get-started
+                    button.btn.btn-secondary Get started
+
+            .col-md-4.plan
+                h3 PROFESSIONAL
+                p Make individual product
+                hr
+                h4 $8.99
+                h5 per month
+                p Computer War Games How To Estimate Decisions Made By C C Trainees.
+                hr
+                ul.check-marks
+                    li.checked 8 Gb of space
+                    li.checked 60 days of file recovery
+                    li.checked MS Office 365 integration
+                    li.checked Unlimited third-party integrations
+                    li.text-muted Remote wipe
+                p.get-started
+                    button.btn.btn-secondary Get started
+
+            .col-md-4.plan.plan-featured
+                h3 BUSINESS
+                p For big companies
+                hr
+                h4 $18.99
+                h5 per month
+                p Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing.
+                hr
+                ul.check-marks
+                    li.checked 30 Gb of space
+                    li.checked 90 days of file recovery
+                    li.checked MS Office 365 integration
+                    li.checked Unlimited third-party integrations
+                    li.checked Remote wipe
+                p.get-started
+                    button.btn.btn-secondary Get started
+
+    section#tour.container
+
+    section#cat.container-fluid
+        .container
+            header.row
+                .col-md-12
+                    h1 The Ultimate Pasta Length Editor
+                    h2 How to boost the design and developing process with a little help of four paws. True story by Snoop Dogg.
+            .row
+                .col-md-12
+                    button.btn.btn-primary Try it for Free
+            .row
+                .col-md-12
+                    p Superpasta trusted and used by multiple companies
+            .row
+                .col-md-6.col-sm-12
+                    img.img-responsive(src="/images/cat/evernote_marvel_brazzers.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
+                .col-md-6.col-sm-12
+                    img.img-responsive(src="/images/cat/motorola_netflix_adobe.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
+
+    footer.container.row
+        .col-md-1.logo
+            img.img-responsive(src="/images/common/module-02-logo-color.svg" alt="Module 02 logo in full color")
+        .col-md-3.copyright
+            p Huge modern UI Kit containing 130+ terrific components in 11 popular categories. Each component is fully.
+        .col-md-6.sitemap
+            .row
+                ul.col-md-3.col-offset-1
+                    li.header Support
+                    li
+                        a(href="#") About Us
+                        a(href="#") Press
+                        a(href="#") FAQ
+                ul.col-md-3
+                    li.header Business
+                    li
+                        a(href="#") Home
+                        a(href="#") Mobile
+                        a(href="#") Pricing
+                ul.col-md-3
+                    li.header Community
+                    li
+                        a(href="#") Developers
+                        a(href="#") Referrals
+                        a(href="#") Forum
+
+        .col-md-2.language-selector
+            .btn-group.dropup
+                span.language-en-UK English (UK)
+                span(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                    span.caret
+                    span.sr-only Select language
+                ul.dropdown-menu.dropdown-menu-right
+                    li
+                        a(href="?lang=es").language-es Español
+                        a(href="/").language-en-UK English (UK)
+                        a(href="/").language-en-US English (US)
