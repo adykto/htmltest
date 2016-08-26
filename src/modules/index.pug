@@ -1,7 +1,7 @@
 include ../_core/mixins.pug
 +body
     header#menu.container
-        nav.navbar.row
+        nav.navbar
             .navbar-header.col-md-2
                 img.logo(src="/images/common/module-02-logo.svg" alt="Module 02 logo - We design and develop software.")
             ul.nav.navbar-nav.col-md-10.hidden-print
@@ -15,14 +15,14 @@ include ../_core/mixins.pug
                     a(href="#contact") Contact sales
 
     section#hero.container
-        header.row
+        header
             .col-md-12
                 h1 The Best Way to Work Together
-                h2 We design and develop software for funded startups and established companies. Here are just some examples of our work
+                p We design and develop software for funded startups and established companies. Here are just some examples of our work
 
-        .hero.row
-            .col-md-12
-                img.img-responsive.hidden-print(src="/images/showcase/hero@2x.jpg" alt="Module 02 Showcase")
+        .row
+            .showcase.col-md-12
+                img.showcase-img(src="/images/showcase/hero.jpg" alt="Module 02 Showcase")
 
         .features.row
             .col-md-4.features-bullet.features-bullet-data
@@ -36,10 +36,10 @@ include ../_core/mixins.pug
                 p That really resonates with your target audience.
 
     section#pricing.container
-        header.row
+        header
             .col-md-12
                 h1 Simple Pricing
-                h2 It seems from the moment you begin to take your love of astronomy seriously, the thing that is on your mind is what kind.
+                p It seems from the moment you begin to take your love of astronomy seriously, the thing that is on your mind is what kind.
 
         .plans.row
             .col-md-4.plan
@@ -93,60 +93,71 @@ include ../_core/mixins.pug
                 p.get-started
                     button.btn.btn-secondary Get started
 
-    section#tour.container
+    section#tour.container-fluid
+        .container
+            .col-md-6
+                img.macbook-screenshot(src="/images/tour/macbook.svg" alt="Macbook showing our stats extension")
+            .col-md-4
+                h3 Powerful Extensions
+                p This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature.
+                p
+                    a(href="#" alt="Learn more about Module 02 extensions")
+                        span Learn more&nbsp;
+                        img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
 
     section#cat.container-fluid
         .container
             header.row
                 .col-md-12
                     h1 The Ultimate Pasta Length Editor
-                    h2 How to boost the design and developing process with a little help of four paws. True story by Snoop Dogg.
+                    p How to boost the design and developing process with a little help of four paws. True story by Snoop Dogg.
             .row
                 .col-md-12
                     button.btn.btn-primary Try it for Free
             .row
                 .col-md-12
                     p Superpasta trusted and used by multiple companies
-            .row
+            .row.client-list
                 .col-md-6.col-sm-12
-                    img.img-responsive(src="/images/cat/evernote_marvel_brazzers.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
+                    img(src="/images/cat/evernote_marvel_brazzers.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
                 .col-md-6.col-sm-12
-                    img.img-responsive(src="/images/cat/motorola_netflix_adobe.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
+                    img(src="/images/cat/motorola_netflix_adobe.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
 
-    footer.container.row
-        .col-md-1.logo
-            img.img-responsive(src="/images/common/module-02-logo-color.svg" alt="Module 02 logo in full color")
-        .col-md-3.copyright
-            p Huge modern UI Kit containing 130+ terrific components in 11 popular categories. Each component is fully.
-        .col-md-6.sitemap
-            .row
-                ul.col-md-3.col-offset-1
-                    li.header Support
-                    li
-                        a(href="#") About Us
-                        a(href="#") Press
-                        a(href="#") FAQ
-                ul.col-md-3
-                    li.header Business
-                    li
-                        a(href="#") Home
-                        a(href="#") Mobile
-                        a(href="#") Pricing
-                ul.col-md-3
-                    li.header Community
-                    li
-                        a(href="#") Developers
-                        a(href="#") Referrals
-                        a(href="#") Forum
+    footer.container-fluid
+        .container
+            .col-md-1.logo
+                img.img-responsive(src="/images/common/module-02-logo-color.svg" alt="Module 02 logo in full color")
+            .col-md-3.copyright
+                p Huge modern UI Kit containing 130+ terrific components in 11 popular categories. Each component is fully.
+            .col-md-6.sitemap
+                .row
+                    ul.col-md-3.col-offset-1
+                        li.header Support
+                        li
+                            a(href="#") About Us
+                            a(href="#") Press
+                            a(href="#") FAQ
+                    ul.col-md-3
+                        li.header Business
+                        li
+                            a(href="#") Home
+                            a(href="#") Mobile
+                            a(href="#") Pricing
+                    ul.col-md-3
+                        li.header Community
+                        li
+                            a(href="#") Developers
+                            a(href="#") Referrals
+                            a(href="#") Forum
 
-        .col-md-2.language-selector
-            .btn-group.dropup
-                span.language-en-UK English (UK)
-                span(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
-                    span.caret
-                    span.sr-only Select language
-                ul.dropdown-menu.dropdown-menu-right
-                    li
-                        a(href="?lang=es").language-es Español
-                        a(href="/").language-en-UK English (UK)
-                        a(href="/").language-en-US English (US)
+            .col-md-2.language-selector
+                .btn-group.dropup
+                    span.language-en-UK English (UK)
+                    span(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        span.caret
+                        span.sr-only Select language
+                    ul.dropdown-menu.dropdown-menu-right
+                        li
+                            a(href="?lang=es").language-es Español
+                            a(href="/").language-en-UK English (UK)
+                            a(href="/").language-en-US English (US)
