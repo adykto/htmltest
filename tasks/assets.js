@@ -4,6 +4,8 @@ var gulp = require('gulp');
 
 gulp.task('assets', function() {
     gulp.src([
+      'src/modules/*/*.gif',
+      'src/modules/*/*.jpg',
       'src/modules/*/*.png',
       'src/modules/*/*.svg'
     ])
