@@ -1,29 +1,41 @@
 @import bootstrap
 @import '_styles/colors'
-
-.dev-tag
-    background: $red;
-    color: white;
+@import '_styles/menu'
+@import '_styles/grid'
 
 body
     background: #FFFFFF;
-    color: #8e9ba5;
+    color: $textColor;
     font-family: 'Roboto', Helvetica, Myriad, Arial, sans-serif;
+    font-size: 16px;
     font-weight: 100;
+
+h1, h2, h3, h4
+    -webkit-font-smoothing: antialiased;
 
 h2, h3, h4
     font-weight: 100;
 
 h1, h3
-    color: #43484d;
+    color: $headerColor;
 
 h1
+    font-size: 52px;
     font-weight: 300;
+    margin-bottom: 22px;
+    letter-spacing: -2.5px;
+    line-height: 60px;
+
+h3
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    margin-top: 15px;
 
 header
+    font-size: 22px;
+    line-height: 32px;
     text-align: center;
-    p
-        font-size: 18px
 
 footer
     background: #545e6b;
