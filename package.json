@@ -1,5 +1,6 @@
 {
   "name": "pixel2html-test",
+  "title": "Pixel2hHTML Test",
   "version": "0.0.0",
   "description": "This is just me playing to be a front end dev.",
   "main": "index.js",
@@ -30,11 +31,14 @@
     "gulp-concat": "^2.6.0",
     "gulp-filter": "^4.0.0",
     "gulp-git": "^1.11.0",
+    "gulp-jshint": "^2.0.1",
     "gulp-pug": "^3.0.4",
     "gulp-replace-path": "^0.4.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-stylus": "^2.5.0",
     "gulp-tag-version": "^1.3.0",
     "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.3",
     "modernizr": "^3.3.1"
   }
 }
