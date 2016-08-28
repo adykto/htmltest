@@ -6,12 +6,11 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 gulp.task('scripts', function() {
-    gulp.src(['src/_core/app.js', 'src/modules/*.js'])
-        .pipe(jshint({
-          jshintrc: '.jshintrc'
-        }))
+    gulp.src(['src/_core/app.js', 'src/_core/debug.js', 'src/modules/*.js'])
         .pipe(concat('main.min.js'))
-        .pipe(uglify({outSourceMap: true}))
+        .pipe(jshint({
+            jshintrc: '.jshintrc'
+        }))
         .pipe(gulp.dest('./dist/javascript/'));
 });
 

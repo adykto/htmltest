@@ -10,7 +10,7 @@ gulp.task('jquery', function () {
     return jquery.src({
         release: 2,
         flags: [
-            '-deprecated',
+        //    '-deprecated',
         //    '-event/alias',
             '-ajax',
             '-wrap',
