@@ -145,6 +145,7 @@ $(function () {
     console.log('[ALT+Click] Toggle add/remove guide lines, [CTRL+K] Clear all guides');
     console.log('[CTRL+G] Toggles grayscale ON/OFF, [CTRL+L] Toggles layout ON/OFF, [CTRL+O] Toggles opacity +25%');
 
+    //toggleClass('grid-visible');
     toggleClass('grid-lines');
 
     var cachedGuides = localStorage.getItem("guide-lines");
