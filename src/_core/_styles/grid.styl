@@ -1,8 +1,52 @@
-body
-    &.grid-visible
-        //&::after
-        background: url('/images/common/bs-grid.png') top center repeat-y;
+.grid-visible
+    background: url('/images/common/bs-grid.png') top center repeat-y;
+    mix-blend-mode: multiply;
 
-    &.grid-opaque
+.grid-lines
+    .guide-lineX
+    .guide-lineY
+    .guide-lineLabel
+        background: #FFF;
+        left: 0;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        z-index: 999999;
+
+    .guide-lineX
+        border-top: 1px dashed #000;
+        height: 1px;
+
+    .guide-lineY
+        border-left: 1px dashed #000;
+        width: 1px;
+
+    .guide-lineLabel
+        background: black;
+        color: white;
+        font-size: 10px
+        margin: 8px;
+        padding: 3px;
+
+    .guide-saved
+        border-size: 2px;
+        opacity: 0.6;
+
+        &.guide-lineX
+            border-color: red;
+            cursor: row-resize;
+
+        &.guide-lineY
+            border-color: blue;
+            cursor: col-resize;
+
+.grid-opaque
+    .document
         *
-            opacity: 0.95;
+            -webkit-filter: grayscale(100%);
+
+.grid-luminosity
+    .document
+        -webkit-filter: grayscale(100%) contrast(150%);
+        filter: grayscale(100%) contrast(150%);
+
