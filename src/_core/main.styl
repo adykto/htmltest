@@ -1,5 +1,5 @@
-@import bootstrap
 @import '_styles/colors'
+@import '_styles/custom'
 @import '_styles/menu'
 @import '_styles/grid'
 
@@ -14,6 +14,10 @@ a
     color: $linkColor;
     font-weight: 400;
 
+    &:hover
+        color: $headerColor;
+        text-decoration: none;
+
 h1, h2, h3, h4
     -webkit-font-smoothing: antialiased;
 
@@ -26,7 +30,8 @@ h1, h2, h3
 h1
     font-size: 52px;
     font-weight: 300;
-    margin-bottom: 22px;
+    margin-bottom: 27px;
+    margin-top: 15px;
     letter-spacing: -2.5px;
     line-height: 60px;
 
@@ -51,3 +56,5 @@ header
 footer
     background: #545e6b;
     padding: 45px 0 70px 0;
+
+@import '../../src/modules/**/*.styl';

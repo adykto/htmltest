@@ -26,3 +26,29 @@
                 left: -110px;
                 position: absolute;
                 top: 0;
+
+    .pagination
+        padding: 10px 0;
+
+        .pagination-bullet
+            display: inline-block;
+            width: 16px;
+
+            span
+                background: $mutedColor;
+                border-radius: 50%;
+                box-sizing: content-box;
+                display: inline-block;
+                height: 6px;
+                margin: 2px;
+                width: 6px;
+
+            &.pagination-selected
+                span
+                    background: $linkColor;
+                    margin: 0;
+                    padding: 2px;
+
+            &:hover
+                span
+                    background: $textColor;

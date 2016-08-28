@@ -1,111 +1,70 @@
 include ../_core/mixins.pug
 +body
-    header#menu.container-fluid
-        nav.navbar.container
-            .row
-                .navbar-header.col-md-2
-                    img.logo(src="/images/common/module-02-logo.svg" alt="Module 02 logo - We design and develop software.")
-                ul.nav.navbar-nav.col-md-10.hidden-print
-                    li
-                        a(href="#hero") Features
-                    li
-                        a(href="#pricing") Pricing
-                    li
-                        a(href="#tour") Learn more
-                    li
-                        a(href="#contact") Contact sales
+    include common/menu
+    include showcase/showcase
+    include tour/tour
 
-    section#hero.container
-        header.col-md-8.col-md-offset-2
-            h1 The Best Way to Work Together
-            p We design and develop software for funded startups and established companies. Here are just some examples of our work
 
-        .col-md-12
-            .row
-                .showcase.col-md-12
-                    img.showcase-img(src="/images/showcase/hero.jpg" alt="Module 02 Showcase")
 
-        .features.row
-            .col-md-4.features-bullet.features-bullet-data
-                h3 Keep your Data
-                p Enterprise-ready performance and controls.
-            .col-md-4.features-bullet.features-bullet-prototype
-                h3 Prototype your Project
-                p 24/7 proactive threat scanning to prevent attacks.
-            .col-md-4.features-bullet.features-bullet-texts
-                h3 Create Smart Texts
-                p That really resonates with your target audience.
 
-    section#tour.container-fluid
+    section#pricing.container-fluid
         .container
-            .row
-                .col-md-6
-                    img.macbook-screenshot(src="/images/tour/macbook.svg" alt="Macbook showing our stats extension")
-                .col-md-4
-                    h2 Powerful Extensions
-                    p This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature.
-                    p
-                        a(href="#" alt="Learn more about Module 02 extensions")
-                            span Learn more&nbsp;
-                            img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
+            header
+                .col-md-12
+                    h1 Simple Pricing
+                    p It seems from the moment you begin to take your love of astronomy seriously, the thing that is on your mind is what kind.
 
-    section#pricing.container
-        header
-            .col-md-12
-                h1 Simple Pricing
-                p It seems from the moment you begin to take your love of astronomy seriously, the thing that is on your mind is what kind.
+            .plans.row
+                .col-md-4.plan
+                    h3 BASIC
+                    p For a taste our product
+                    hr
+                    h4 $0
+                    h5 always free
+                    p How to boost the design and developing process with help of four paws.
+                    hr
+                    ul.check-marks
+                        li.checked 2 Gb of space
+                        li.checked 30 days of file recovery
+                        li.checked MS Office 365 integration
+                        li.text-muted Unlimited third-party integrations
+                        li.text-muted Remote wipe
+                    p.get-started
+                        button.btn.btn-secondary Get started
 
-        .plans.row
-            .col-md-4.plan
-                h3 BASIC
-                p For a taste our product
-                hr
-                h4 $0
-                h5 always free
-                p How to boost the design and developing process with help of four paws.
-                hr
-                ul.check-marks
-                    li.checked 2 Gb of space
-                    li.checked 30 days of file recovery
-                    li.checked MS Office 365 integration
-                    li.text-muted Unlimited third-party integrations
-                    li.text-muted Remote wipe
-                p.get-started
-                    button.btn.btn-secondary Get started
+                .col-md-4.plan
+                    h3 PROFESSIONAL
+                    p Make individual product
+                    hr
+                    h4 $8.99
+                    h5 per month
+                    p Computer War Games How To Estimate Decisions Made By C C Trainees.
+                    hr
+                    ul.check-marks
+                        li.checked 8 Gb of space
+                        li.checked 60 days of file recovery
+                        li.checked MS Office 365 integration
+                        li.checked Unlimited third-party integrations
+                        li.text-muted Remote wipe
+                    p.get-started
+                        button.btn.btn-secondary Get started
 
-            .col-md-4.plan
-                h3 PROFESSIONAL
-                p Make individual product
-                hr
-                h4 $8.99
-                h5 per month
-                p Computer War Games How To Estimate Decisions Made By C C Trainees.
-                hr
-                ul.check-marks
-                    li.checked 8 Gb of space
-                    li.checked 60 days of file recovery
-                    li.checked MS Office 365 integration
-                    li.checked Unlimited third-party integrations
-                    li.text-muted Remote wipe
-                p.get-started
-                    button.btn.btn-secondary Get started
-
-            .col-md-4.plan.plan-featured
-                h3 BUSINESS
-                p For big companies
-                hr
-                h4 $18.99
-                h5 per month
-                p Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing.
-                hr
-                ul.check-marks
-                    li.checked 30 Gb of space
-                    li.checked 90 days of file recovery
-                    li.checked MS Office 365 integration
-                    li.checked Unlimited third-party integrations
-                    li.checked Remote wipe
-                p.get-started
-                    button.btn.btn-secondary Get started
+                .col-md-4.plan.plan-featured
+                    h3 BUSINESS
+                    p For big companies
+                    hr
+                    h4 $18.99
+                    h5 per month
+                    p Direct Mail Advertising How I Made 47 325 In 30 Days By Mailing.
+                    hr
+                    ul.check-marks
+                        li.checked 30 Gb of space
+                        li.checked 90 days of file recovery
+                        li.checked MS Office 365 integration
+                        li.checked Unlimited third-party integrations
+                        li.checked Remote wipe
+                    p.get-started
+                        button.btn.btn-secondary Get started
 
     section#cat.container-fluid
         .container
@@ -128,7 +87,7 @@ include ../_core/mixins.pug
                 .col-md-6.col-sm-12
                     img(src="/images/cat/motorola_netflix_adobe.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
 
-    footer.container-fluid
+    footer#contact.container-fluid
         .container
             .col-md-1.logo
                 img.img-responsive(src="/images/common/module-02-logo-color.svg" alt="Module 02 logo in full color")
