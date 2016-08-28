@@ -13,19 +13,21 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch:gulp', function() {
-  var p;
+  var process;
+
   gulp.watch(['Gulpfile.js', 'package.json', 'tasks/*.js'], function () {
-    if(p) {
-      p.kill();
+    if(process) {
+        process.kill();
     }
-    p = spawn('gulp', ['default'], {stdio: 'inherit'});
+
+    process = spawn('gulp', {stdio: 'inherit'});
   });
 });
 
 gulp.task('serve', ['watch:gulp', 'browser-sync'], function() {
-  gulp.watch('src/modules/**/*.{gif,jpg,png,svg}', ['assets']).on('change', browserSync.reload);
-  gulp.watch('src/**/*.pug', ['pug']).on('change', browserSync.reload);
-  gulp.watch('src/**/*.styl', ['stylus']).on('change', browserSync.reload);
-  gulp.watch('src/**/*.js', ['scripts']).on('change', browserSync.reload);
+  gulp.watch('src/modules/**/*.{gif,jpg,png,svg}', ['assets']);
+  gulp.watch('src/**/*.pug', ['pug']);
+  gulp.watch('src/**/*.styl', ['stylus']);
+  gulp.watch('src/**/*.js', ['scripts']);
   gulp.watch(['dist/**/*'], browserSync.reload);
 });
