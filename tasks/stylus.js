@@ -16,21 +16,20 @@ gulp.task('stylus', function(){
         .pipe(sourcemaps.init())
         .pipe(stylus({ use: bootstrap(), compress: false }))
         .pipe(concat('main.min.css'))
-        .pipe(uncss({
-            html: ['dist/*.html']
-        }))
-        .pipe(nano())
-
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/stylesheets'));
 });
 
 gulp.task('stylus:prod', function(){
     gulp.src([
         'bower_components/roboto-fontface/css/roboto/roboto-fontface.css',
-        'src/_core/main.styl',
-        'src/modules/**/*.styl'
+        'src/_core/main.styl'
     ])
         .pipe(stylus({ use: bootstrap(), compress: true }))
+        .pipe(uncss({
+            html: ['dist/*.html']
+        }))
+        .pipe(nano())
         .pipe(concat('main.min.css'))
         .pipe(gulp.dest('./dist/stylesheets'));
 });
