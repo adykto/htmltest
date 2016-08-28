@@ -4,15 +4,16 @@ var gulp = require('gulp'),
     bootstrap = require('bootstrap-styl'),
     concat = require('gulp-concat'),
     stylus = require('gulp-stylus'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('stylus', function(){
     gulp.src([
         'bower_components/roboto-fontface/css/roboto/roboto-fontface.css',
-        'src/_core/main.styl',
-        'src/modules/**/*.styl'
+        'src/_core/main.styl'
     ])
-        .pipe(stylus({ use: bootstrap(), compress: false }))
+        .pipe(sourcemaps.init())
+        .pipe(stylus({ use: bootstrap(), linenos: true, compress: false }))
         .pipe(concat('main.min.css'))
         .pipe(gulp.dest('./dist/stylesheets'));
 });
