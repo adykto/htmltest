@@ -22,7 +22,7 @@ gulp.task('watch:gulp', function() {
   });
 });
 
-gulp.task('serve', ['watch:gulp', 'default', 'browser-sync'], function() {
+gulp.task('serve', ['watch:gulp', 'browser-sync'], function() {
   gulp.watch('src/modules/**/*.{gif,jpg,png,svg}', ['assets']).on('change', browserSync.reload);
   gulp.watch('src/**/*.pug', ['pug']).on('change', browserSync.reload);
   gulp.watch('src/**/*.styl', ['stylus']).on('change', browserSync.reload);
