@@ -20,10 +20,6 @@
     "tests"
   ],
   "dependencies": {
-    "slick-carousel": "slick.js#^1.6.0",
     "roboto-fontface": "^0.5.0"
-  },
-  "devDependencies": {
-    "modernizr": "^3.3.1"
   }
 }
