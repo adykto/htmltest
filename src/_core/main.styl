@@ -60,7 +60,40 @@ header
 
 footer
     background: #545e6b;
-    padding: 45px 0 70px 0;
+    color: #B7BCC1;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 52px 0 70px 0;
+
+    .language-selector
+        img
+            margin-top: -3px;
+            margin-right: 10px;
+
+        button
+            .caret
+                margin-left: 10px;
+
+    .logo
+        margin-top: 4px;
+
+    ul
+        list-style-type: none;
+
+        li
+            height: 36px;
+
+            &.header
+                color: #FFF;
+
+            a
+                color: #B7BCC1;
+                -webkit-font-smoothing: antialiased;
+
+                &:active
+                &:focus
+                &:hover
+                    color: #FFF;
 
 .btn-secondary
     background: #fff;
@@ -74,5 +107,8 @@ footer
     padding: 0;
     width: 100%;
     -webkit-font-smoothing: antialiased;
+
+.btn-transparent
+    background: none;
 
 @import '../../src/modules/**/*.styl';
