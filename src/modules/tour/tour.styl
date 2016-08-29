@@ -2,7 +2,6 @@
     line-height: 25px;
     min-height: 400px;
     padding-bottom: 60px;
-    padding-top: 100px;
     position: relative;
 
     p
@@ -14,21 +13,30 @@
         @media screen and (max-width: 991px)
             position: inherit;
 
-        @media screen and (min-width: 992px)
-            //width: 100%;
-
     .macbook-screenshot
         height: 372px;
         max-width: 100%;
 
         @media screen and (min-width: 992px)
-            @media screen and (max-width: 1200px)
+            @media screen and (max-width: 1400px)
                 left: -110px;
                 position: absolute;
                 top: 0;
 
+    #tour-slider
+        padding-top: 100px;
+
+    .item
+        height: 400px;
+
+    .carousel-control
+        background: none;
+
     .pagination
-        padding: 10px 0;
+        position: relative;
+        text-align: center;
+        top: 400px;
+        width: 100%;
 
         .pagination-bullet
             display: inline-block;
@@ -43,7 +51,7 @@
                 margin: 2px;
                 width: 6px;
 
-            &.pagination-selected
+            &.active
                 span
                     background: $linkColor;
                     margin: 0;

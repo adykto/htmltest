@@ -1,26 +1,45 @@
 section#tour.container-fluid
-    .container
-        .row
-            .sliders
-                .col-md-6
-                    img.macbook-screenshot(src="/images/tour/macbook.svg" alt="Macbook showing our stats extension")
+    #tour-slider.carousel.slide(data-ride='carousel')
+        .carousel-inner(role='listbox')
+            .item.active
+                .row
+                    .col-md-6
+                        img.macbook-screenshot(src="/images/tour/macbook.svg" alt="Macbook showing our stats extension")
+                    .col-md-4
+                        h2 Powerful Extensions 1
+                        p This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature.
+                        p
+                            a(href="#contact" alt="Learn more about Module 02 extensions")
+                                span Learn more&nbsp;&nbsp;
+                                img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
 
-                .col-md-4
-                    h2 Powerful Extensions
-                    p This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature.
-                    p
-                        a(href="#contact" alt="Learn more about Module 02 extensions")
-                            span Learn more&nbsp;&nbsp;
-                            img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
+            .item
+                .row
+                    .col-md-6
+                        img.macbook-screenshot(src="/images/tour/macbook.svg" alt="Macbook showing our stats extension")
+                    .col-md-4
+                        h2 Powerful Extensions 2
+                        p This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature.
+                        p
+                            a(href="#contact" alt="Learn more about Module 02 extensions")
+                                span Learn more&nbsp;&nbsp;
+                                img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
 
-                    .pagination
-                        a.pagination-bullet.pagination-selected(href="#")
-                            span &nbsp;
-                        a.pagination-bullet(href="#")
-                            span &nbsp;
-                        a.pagination-bullet(href="#")
-                            span &nbsp;
-                        a.pagination-bullet(href="#")
-                            span &nbsp;
-                        a.pagination-bullet(href="#")
-                            span &nbsp;
+            .item
+                .row
+                    .col-md-6
+                        img.macbook-screenshot(src="/images/tour/macbook.svg" alt="Macbook showing our stats extension")
+                    .col-md-4
+                        h2 Powerful Extensions 3
+                        p This article is floated online with an aim to help you find the best dvd printing solution. Dvd printing is an important feature.
+                        p
+                            a(href="#contact" alt="Learn more about Module 02 extensions")
+                                span Learn more&nbsp;&nbsp;
+                                img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
+
+        a.left.carousel-control(href='#tour-slider', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+        a.right.carousel-control(href='#tour-slider', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
