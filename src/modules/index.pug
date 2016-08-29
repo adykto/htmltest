@@ -67,7 +67,7 @@ include ../_core/mixins.pug
     section#cat.container-fluid
         .container
             header.row
-                .col-md-12
+                .col-md-8.col-md-offset-2
                     h1 The Ultimate Pasta Length Editor
                     p How to boost the design and developing process with a little help of four paws. True story by Snoop Dogg.
 
@@ -75,15 +75,16 @@ include ../_core/mixins.pug
                 .col-md-12
                     button.btn.btn-primary Try it for Free
 
-            .row
-                .col-md-12
-                    p Superpasta trusted and used by multiple companies
+            .client-list
+                .row
+                    .col-md-4.col-md-offset-4
+                        p Superpasta trusted and used by multiple companies
 
-            .row.client-list
-                .col-md-6.col-sm-12
-                    img(src="/images/cat/evernote_marvel_brazzers.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
-                .col-md-6.col-sm-12
-                    img(src="/images/cat/motorola_netflix_adobe.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
+                .row
+                    .col-md-6.col-sm-12
+                        img(src="/images/cat/evernote_marvel_brazzers.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
+                    .col-md-6.col-sm-12
+                        img(src="/images/cat/motorola_netflix_adobe.svg" alt="Our beloved clients: Evernote, Marvel, Brazzers, Motorola, Netflix, Adobe.")
 
     footer#contact.container-fluid
         .container

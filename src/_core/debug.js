@@ -11,15 +11,15 @@ $(function () {
 
     function toggleClass(name) {
         if ($body.hasClass(name)) {
-            $body.removeClass(name)
+            $body.removeClass(name);
         } else {
-            $body.addClass(name)
+            $body.addClass(name);
         }
     }
 
     function toggleOpacity() {
         if (opacity < 1) {
-            opacity = opacity + 0.25
+            opacity = opacity + 0.25;
         } else {
             opacity = 0.25;
         }
@@ -29,7 +29,7 @@ $(function () {
             $document.css('opacity', '');
         } else {
             if (!$document.hasClass('grid-opaque')) {
-                $document.addClass('grid-opaque')
+                $document.addClass('grid-opaque');
             }
 
             $document.css('opacity', opacity);
@@ -37,9 +37,17 @@ $(function () {
     }
 
     function hideGuides() {
-        if(lineLabel) lineLabel.remove();
-        if(lineX) lineX.remove();
-        if(lineY) lineY.remove();
+        if(lineLabel) {
+            lineLabel.remove();
+        }
+
+        if(lineX) {
+            lineX.remove();
+        }
+
+        if(lineY) {
+            lineY.remove();
+        }
 
         lineLabel = null;
         lineX = null;
@@ -47,10 +55,11 @@ $(function () {
     }
 
     function clearGuides() {
-        $('.guide-saved').remove();
+        var $guideSaved = $('.guide-saved');
+        $guideSaved.remove();
         guideLines = [];
-        localStorage["guide-lines"] = [];
-        console.log($('.guide-saved'))
+        localStorage['guide-lines'] = [];
+        console.log($guideSaved);
     }
 
     function createGuide(x, y) {
@@ -131,11 +140,11 @@ $(function () {
         if(e.altKey) {
             createGuide(e.pageX, e.pageY);
             guideLines.push([e.pageX, e.pageY]);
-            localStorage["guide-lines"] = JSON.stringify(guideLines);
+            localStorage['guide-lines'] = JSON.stringify(guideLines);
         }
     });
 
-    $(window).on('resize', function(e){
+    $(window).on('resize', function(){
         if(lineX !== null) {
             lineX.css('width', $document.width());
             lineY.css('height', $document.height());
@@ -148,13 +157,12 @@ $(function () {
     //toggleClass('grid-visible');
     toggleClass('grid-lines');
 
-    var cachedGuides = localStorage.getItem("guide-lines");
+    var cachedGuides = localStorage.getItem('guide-lines');
     if(cachedGuides && cachedGuides.length > 0) {
         guideLines = JSON.parse(cachedGuides) || [];
 
         $.each(guideLines, function(index, guide){
-            console.log(guide)
             createGuide(guide[0], guide[1]);
-        })
+        });
     }
 });
