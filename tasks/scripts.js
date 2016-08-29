@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 gulp.task('scripts', function() {
-    gulp.src(['src/_core/app.js', 'src/_core/debug.js', 'src/modules/*.js'])
+    gulp.src(['node_modules/bootstrap-styl/js/dropdown.js', 'src/_core/app.js', 'src/_core/debug.js', 'src/modules/*.js'])
         .pipe(concat('main.min.js'))
         .pipe(jshint({
             jshintrc: '.jshintrc'
