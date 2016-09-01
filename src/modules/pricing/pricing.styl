@@ -45,6 +45,7 @@
 
         .plan-excerpt
             margin-bottom: 27px;
+            min-height: 65px;
 
         .plan
             background: #FFF;
@@ -101,3 +102,39 @@
                 border-color: #7dc855;
                 color: #FFFFFF;
 
+    @media (max-width: 991px)
+        .plans-wrapper
+            background: none;
+            box-shadow: none;
+
+            .plan
+                background: #FFF;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px 0px rgba(0,0,0,0.10);
+                margin-bottom: 30px;
+
+                &:first-child
+                    border-radius: 6px;
+
+                &.plan-featured
+                    background: #39ADD1;
+                    border-radius: 6px;
+                    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.10);
+                    color: #FFF;
+
+    @media (max-width: 768px)
+        .plans-wrapper
+            background: none;
+            box-shadow: none;
+
+            .plan
+                background: #FFF;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px 0px rgba(0,0,0,0.10);
+                margin-bottom: 30px;
+
+                &.plan-featured
+                    background: #39ADD1;
+                    border-radius: 6px;
+                    box-shadow: 0 2px 4px 0px rgba(0,0,0,0.10);
+                    color: #FFF;

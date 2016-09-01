@@ -12,8 +12,6 @@ gulp.task('assets', function() {
         .pipe(gulp.dest('./dist/images'));
 
     gulp.src([
-        'bower_components/roboto-fontface/fonts/**',
-        'bower_components/slick-carousel/slick/fonts/**'
-    ])
+        'bower_components/roboto-fontface/fonts/**'])
         .pipe(gulp.dest('dist/fonts/'));
 });

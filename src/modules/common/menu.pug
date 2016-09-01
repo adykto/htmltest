@@ -1,14 +1,24 @@
 header#menu.container-fluid
     nav.navbar.container
         .row
-            .navbar-header.col-md-2
-                img.logo(src="/images/common/module-02-logo.svg" alt="Module 02 logo - We design and develop software.")
-            ul.nav.navbar-nav.col-md-10.hidden-print
-                li
-                    a(href="#hero") Features
-                li
-                    a(href="#pricing") Pricing
-                li
-                    a(href="#tour") Learn more
-                li
-                    a(href="#contact") Contact sales
+            .col-xs-12.col-sm-2
+                .navbar.navbar-header
+                    button.navbar-toggle(type="button" data-toggle="collapse" data-target="#menu-bar" aria-expanded="true")
+                        .sr-only Toggle navigation
+                        .icon-bar
+                        .icon-bar
+                        .icon-bar
+
+                    img.logo(src="/images/common/module-02-logo.svg" alt="Module 02 logo - We design and develop software.")
+
+            .col-xs-12.col-sm-10.hidden-print
+                #menu-bar.navbar-collapse.collapse(aria-expanded="true")
+                    ul.nav.navbar-nav
+                        li
+                            a(href="#hero") Features
+                        li
+                            a(href="#pricing") Pricing
+                        li
+                            a(href="#tour") Learn more
+                        li
+                            a(href="#contact") Contact sales

@@ -112,3 +112,40 @@ footer
     background: none;
 
 @import '../../src/modules/**/*.styl';
+
+@media (max-width: 560px)
+    #contact
+        padding: 20px 0;
+
+        .container
+            padding: 0;
+
+        .sitemap
+            padding: 20px;
+
+            .col-xs-3
+                margin: 0;
+                width: 33.33%;
+
+        .language-selector
+            text-align: center;
+
+@media (max-width: 767px)
+    h1
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 20px;
+
+    header
+        font-size: 20px;
+        line-height: 28px;
+
+@media (max-width: 992px)
+    footer
+        .sitemap
+            clear: both;
+            width: 100%;
+
+        .language-selector
+            button
+                padding-left: 0;

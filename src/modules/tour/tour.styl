@@ -24,6 +24,7 @@
                 top: 0;
 
     #tour-slider
+        height: 640px;
         padding-top: 100px;
 
     .item
@@ -60,3 +61,23 @@
             &:hover
                 span
                     background: $textColor;
+
+    @media (max-width: 767px)
+        padding: 0;
+
+        .macbook-screenshot
+            max-width: 300px;
+
+        #tour-slider
+            height: 640px;
+            padding: 0;
+            text-align: center;
+
+            .carousel-inner
+                overflow: visible;
+
+                h2
+                    margin-top: -30px;
+
+                .item
+                    padding: 30px;
