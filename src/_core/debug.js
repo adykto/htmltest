@@ -83,18 +83,22 @@ $(function () {
     $(document).keydown(function (e) {
         if (e.ctrlKey) {
             switch (e.keyCode) {
+                // CTRL + G
                 case 71:
                     toggleClass('grid-luminosity');
                     break;
 
+                // CTRL + K
                 case 75:
                     clearGuides();
                     break;
 
+                // CTRL + L
                 case 76:
-                    toggleClass('grid-visible');
+                    toggleClass('grid-layout');
                     break;
 
+                // CTRL + O
                 case 79:
                     toggleOpacity();
                     break;
@@ -154,7 +158,7 @@ $(function () {
     console.log('[ALT+Click] Toggle add/remove guide lines, [CTRL+K] Clear all guides');
     console.log('[CTRL+G] Toggles grayscale ON/OFF, [CTRL+L] Toggles layout ON/OFF, [CTRL+O] Toggles opacity +25%');
 
-    //toggleClass('grid-visible');
+    toggleClass('grid-layout');
     toggleClass('grid-lines');
 
     var cachedGuides = localStorage.getItem('guide-lines');
