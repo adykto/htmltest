@@ -24,7 +24,15 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('scripts:prod', function() {
-    gulp.src(['src/_core/app.js', 'src/modules/*.js'])
+    gulp.src([
+        'node_modules/bootstrap-styl/js/carousel.js',
+        'node_modules/bootstrap-styl/js/collapse.js',
+        'node_modules/bootstrap-styl/js/dropdown.js',
+        'node_modules/bootstrap-styl/js/transition.js',
+        'node_modules/bootstrap-styl/js/scrollspy.js',
+        'src/_core/app.js',
+        'src/modules/*.js'
+    ])
         .pipe(concat('main.min.js'))
         .pipe(uglify({outSourceMap: false}))
         .pipe(gulp.dest('./dist/javascript/'));
