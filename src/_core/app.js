@@ -1,22 +1,32 @@
 $(function () {
     'use strict';
 
-    $(document).on('click', 'a[href^="#"]', function (e) {
-        var target = $(this).attr('href');
+    function scrollToDiv(e) {
+        var target = $(this).attr('href'),
+            $target = $(target);
 
-        if ($(target).length) {
-            var pos = $(target).offset().top;
+        if ($target.length) {
+            var pos = $target.offset().top;
+
+            $('body, html').animate({
+                scrollTop: pos
+            });
 
             e.preventDefault();
-            $('body, html').animate({scrollTop: pos});
         }
-    });
+    }
 
-    $(document).on('click','.navbar-collapse.in',function(e) {
-        if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+    function collapseMenu(e) {
+        var $target = $(e.target);
+
+        if( $target.is('a') && $target.attr('class') !== 'dropdown-toggle' ) {
             $(this).collapse('hide');
         }
-    });
+    }
+
+    $(document).on('click', 'a[href^="#"]', scrollToDiv);
+
+    $(document).on('click','.navbar-collapse.in', collapseMenu);
 
     window.sr = ScrollReveal();
     sr.reveal('.scroll-reveal');
