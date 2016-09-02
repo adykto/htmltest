@@ -2,8 +2,7 @@
 
 var gulp = require('gulp'),
     pug = require('gulp-pug'),
-    fs = require('fs'),
-    replace = require('gulp-replace-path');
+    fs = require('fs');
 
 gulp.task('pug', function() {
     gulp.src('src/modules/*.pug')

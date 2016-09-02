@@ -12,7 +12,7 @@ gulp.task('assets', function() {
         .pipe(gulp.dest('./dist/images'));
 
     gulp.src([
-        'src/resources/**',
+        'src/resources/**'
     ])
         .pipe(gulp.dest('./dist/'));
 
