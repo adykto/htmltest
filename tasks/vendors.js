@@ -28,7 +28,7 @@ gulp.task('vendors', ['jquery'], function() {
         'node_modules/bootstrap-styl/js/dropdown.js',
         'node_modules/bootstrap-styl/js/transition.js',
         'node_modules/bootstrap-styl/js/scrollspy.js',
-        'node_modules/scrollreveal/src/scrollreveal.js',
+        'node_modules/scrollreveal/src/scrollreveal.js'
         ])
         .pipe(concat('vendors.min.js'))
         .pipe(uglify({outSourceMap: false}))
