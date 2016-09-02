@@ -1,7 +1,7 @@
 #tour
     line-height: 25px;
     min-height: 400px;
-    padding-bottom: 60px;
+    padding: 0 0 60px 0;
     position: relative;
 
     p
@@ -33,36 +33,52 @@
     .carousel-control
         background: none;
 
+        .carousel-control-next
+        .carousel-control-prev
+            background: url('/images/common/chevron-next.svg') center no-repeat;
+            display: block;
+            height: 30px;
+            padding-right: 60px;
+            position: absolute;
+            right: 0;
+            top: 266px;
+            width: 30px;
+
+        .carousel-control-prev
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+            left: 0;
+
     .pagination
+        left: 51%;
+        margin: 0;
         position: relative;
-        text-align: center;
+        text-align: left;
         top: 400px;
-        width: 100%;
+        width: 40%;
 
         .pagination-bullet
+            background: $mutedColor;
+            border-radius: 50%;
+            box-sizing: content-box;
             display: inline-block;
-            width: 16px;
-
-            span
-                background: $mutedColor;
-                border-radius: 50%;
-                box-sizing: content-box;
-                display: inline-block;
-                height: 6px;
-                margin: 2px;
-                width: 6px;
+            height: 6px;
+            margin: 2px;
+            width: 6px;
 
             &.active
-                span
-                    background: $linkColor;
-                    margin: 0;
-                    padding: 2px;
+                background: $linkColor;
+                margin: 0;
+                padding: 2px;
 
             &:hover
-                span
-                    background: $textColor;
+                background: $textColor;
 
-    @media (max-width: 767px)
+    @media (max-width: 992px)
         padding: 0;
 
         .macbook-screenshot
@@ -81,3 +97,9 @@
 
                 .item
                     padding: 30px;
+
+            .pagination
+                left: 0;
+                text-align: center;
+                top: 350px;
+                width: 100%;

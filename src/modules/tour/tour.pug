@@ -1,5 +1,10 @@
 section#tour.container-fluid
     #tour-slider.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators.pagination
+            li.pagination-bullet(data-target="#tour-slider" data-slide-to="0" class="active")
+            li.pagination-bullet(data-target="#tour-slider" data-slide-to="1")
+            li.pagination-bullet(data-target="#tour-slider" data-slide-to="2")
+
         .carousel-inner(role='listbox')
             .item.active
                 .row
@@ -38,8 +43,8 @@ section#tour.container-fluid
                                 img(src="/images/common/chevron-right.svg" alt="Learn more about our powerful extensions")
 
         a.left.carousel-control(href='#tour-slider', role='button', data-slide='prev')
-            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.carousel-control-prev(aria-hidden='true')
             span.sr-only Previous
         a.right.carousel-control(href='#tour-slider', role='button', data-slide='next')
-            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.carousel-control-next(aria-hidden='true')
             span.sr-only Next
