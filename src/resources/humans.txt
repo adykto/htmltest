@@ -1,0 +1,29 @@
+Dear humans,
+
+This is just a test site... you'll not find anything useful around here...
+
+Maybe you want to see this site source code. Please, take a look at:
+
+https://github.com/adykto/htmltest
+
+
+
+/* TEAM */
+
+Alonso Méndez <alonsomendez@gmail.com>
+@amendez80
+Guadalajara, Jalisco, México
+
+
+/* SITE */
+
+Last update: 2016/09/01
+Standards: HTML5, CSS3, ES5
+Components: Bootstrap, Stylus, jQuery, Gulp, Browsersync, Pug, UnCSS, JSHint, ScrollReveal
+Software: WebStorm, Docker, NodeJS
+
+
+/* THANKS */
+
+NodeJS Team: https://nodejs.org
+Bootstrap Team: https://getbootstrap.com
