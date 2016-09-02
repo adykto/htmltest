@@ -14,11 +14,11 @@ cache:
     - node_modules
 
 before_install:
-  - npm install
-  - bower install
+  - npm install -g gulp bower
 
 before_script:
-  - npm install -g gulp bower
+  - npm install
+  - bower install
 
 script:
   - gulp stage
