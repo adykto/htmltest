@@ -12,6 +12,11 @@ gulp.task('assets', function() {
         .pipe(gulp.dest('./dist/images'));
 
     gulp.src([
+        'src/resources/**',
+    ])
+        .pipe(gulp.dest('./dist/'));
+
+    gulp.src([
         'bower_components/roboto-fontface/fonts/**'])
         .pipe(gulp.dest('dist/fonts/'));
 });
