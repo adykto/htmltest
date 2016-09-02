@@ -21,6 +21,6 @@
     "tests"
   ],
   "dependencies": {
-    "roboto-fontface": "^0.5.0"
+    "roboto-fontface": "^0.6.0"
   }
 }
