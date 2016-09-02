@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "0.10"
+  - "0.12"
+  - "4"
+  - "6"
+
+sudo: false
+
+matrix:
+  fast_finish: true
+
+cache:
+  directories:
+    - bower_components
+    - node_modules
+
+before_install:
+  - npm install
+  - bower install
+
+script:
+  - node ./node_modules/gulp/bin/gulp stage
+
+after_success:
+  - node ./node_modules/gulp/bin/gulp build
