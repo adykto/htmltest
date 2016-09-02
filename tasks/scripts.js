@@ -7,11 +7,6 @@ var gulp = require('gulp'),
 
 gulp.task('scripts', function() {
     gulp.src([
-        'node_modules/bootstrap-styl/js/carousel.js',
-        'node_modules/bootstrap-styl/js/collapse.js',
-        'node_modules/bootstrap-styl/js/dropdown.js',
-        'node_modules/bootstrap-styl/js/transition.js',
-        'node_modules/bootstrap-styl/js/scrollspy.js',
         'src/_core/app.js',
         'src/_core/debug.js',
         'src/modules/*.js'
@@ -25,11 +20,6 @@ gulp.task('scripts', function() {
 
 gulp.task('scripts:prod', function() {
     gulp.src([
-        'node_modules/bootstrap-styl/js/carousel.js',
-        'node_modules/bootstrap-styl/js/collapse.js',
-        'node_modules/bootstrap-styl/js/dropdown.js',
-        'node_modules/bootstrap-styl/js/transition.js',
-        'node_modules/bootstrap-styl/js/scrollspy.js',
         'src/_core/app.js',
         'src/modules/*.js'
     ])

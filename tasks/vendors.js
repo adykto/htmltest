@@ -22,7 +22,13 @@ gulp.task('jquery', function () {
 
 gulp.task('vendors', ['jquery'], function() {
     gulp.src([
-            'node_modules/.tmp/jquery.custom.js'
+        'node_modules/.tmp/jquery.custom.js',
+        'node_modules/bootstrap-styl/js/carousel.js',
+        'node_modules/bootstrap-styl/js/collapse.js',
+        'node_modules/bootstrap-styl/js/dropdown.js',
+        'node_modules/bootstrap-styl/js/transition.js',
+        'node_modules/bootstrap-styl/js/scrollspy.js',
+        'node_modules/scrollreveal/src/scrollreveal.js',
         ])
         .pipe(concat('vendors.min.js'))
         .pipe(uglify({outSourceMap: false}))

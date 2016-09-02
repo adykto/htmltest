@@ -12,14 +12,6 @@ $(function () {
         }
     });
 
-    $(window).scroll(function () {
-        var top = $(window).scrollTop(),
-            $sections = [];
-
-        $sections = $('#menu .nav a');
-
-        if (top > 100) {
-            //sdfsdf sdf
-        }
-    });
+    window.sr = ScrollReveal();
+    sr.reveal('.scroll-reveal');
 });
