@@ -1,7 +1,5 @@
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
   - "4"
   - "6"
 
@@ -19,8 +17,15 @@ before_install:
   - npm install
   - bower install
 
+before_script:
+  - npm install -g gulp bower
+
 script:
-  - node ./node_modules/gulp/bin/gulp stage
+  - gulp stage
 
 after_success:
-  - node ./node_modules/gulp/bin/gulp build
+  - gulp build
+
+notifications:
+    email:
+        on_failure: always

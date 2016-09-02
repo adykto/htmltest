@@ -1,4 +1,5 @@
 # Pixel 2 HTML demo
+[![Build Status](https://travis-ci.org/adykto/htmltest.svg?branch=dev)](https://travis-ci.org/adykto/htmltest)
 
 ### Environments
 
