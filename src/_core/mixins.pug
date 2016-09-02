@@ -5,3 +5,5 @@ mixin body()
             block
 
             include _partials/footer
+        .debug-pill
+            span= package.title + (env === 'DEV'?' · [v' + package.version + ']': '')
