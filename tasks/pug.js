@@ -17,6 +17,18 @@ gulp.task('pug', function() {
         .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('pug:stg', function() {
+    gulp.src('src/modules/*.pug')
+        .pipe(pug({
+            pretty: true,
+            locals: {
+                env: 'STG',
+                package: JSON.parse( fs.readFileSync('./package.json', { encoding: 'utf8' }) )
+            }
+        }))
+        .pipe(gulp.dest('./dist/'));
+});
+
 gulp.task('pug:prod', function() {
     gulp.src('src/modules/*.pug')
         .pipe(pug({
