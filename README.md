@@ -3,7 +3,7 @@
 ### Environments
 
 * Production: https://px2html.alonsomendez.net/
-* Stage: https://px2html-amendez.netlify.com/
+* Stage: https://px2html-amendez-stage.netlify.com/
 * Development: http://px2html.dev
 
 
