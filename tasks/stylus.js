@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     uncss = require('gulp-uncss'),
     nano = require('gulp-cssnano');
 
-gulp.task('stylus', function(){
+gulp.task('stylus:prod', function(){
     gulp.src([
         'bower_components/roboto-fontface/css/roboto/roboto-fontface.css',
         'src/_core/main.styl'
@@ -20,15 +20,15 @@ gulp.task('stylus', function(){
         .pipe(gulp.dest('./dist/stylesheets'));
 });
 
-gulp.task('stylus:prod', function(){
+gulp.task('stylus', function(){
     gulp.src([
         'bower_components/roboto-fontface/css/roboto/roboto-fontface.css',
         'src/_core/main.styl'
     ])
         .pipe(stylus({ use: bootstrap(), compress: true }))
-        .pipe(uncss({
-            html: ['dist/*.html']
-        }))
+        // .pipe(uncss({
+        //     html: ['dist/*.html']
+        // }))
         .pipe(nano())
         .pipe(concat('main.min.css'))
         .pipe(gulp.dest('./dist/stylesheets'));
