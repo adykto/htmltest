@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/adykto/htmltest.svg?branch=dev)](https://travis-ci.org/adykto/htmltest)
 [![Code Climate](https://codeclimate.com/github/adykto/htmltest/badges/gpa.svg)](https://codeclimate.com/github/adykto/htmltest)
 [![Dependency Status](https://www.versioneye.com/user/projects/57c8feaa968d640039516e59/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57c8feaa968d640039516e59)
+[![Known Vulnerabilities](https://snyk.io/test/github/adykto/htmltest/badge.svg)](https://snyk.io/test/github/adykto/htmltest)
 
 ### Environments
 
